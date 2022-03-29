@@ -1,0 +1,25 @@
+.enrolled{
+    min-height: 70vh;
+    padding-top: 20px;
+    min-height: 70vh;
+}
+.enrolled-row{
+    align-items: center;
+
+}
+.enrolled img{
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+
+    .Enrolled{
+        margin: auto;
+    }
+    .enrolled-content{
+        order: 2;
+        margin-top: 20px;
+    }
+    .enrolled-img{
+        order: 1;
+    }
+}

@@ -1,0 +1,17 @@
+.cart-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cart-item img{
+    width: 200px;
+}
+.details {
+    margin-left: 10px;
+}
+.details h5{
+    color: #ff697c;
+}
+.details .title{
+    color: #45567c;
+}

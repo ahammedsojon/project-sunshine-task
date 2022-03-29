@@ -1,0 +1,31 @@
+.cart{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    min-height: 70vh;
+    padding: 20px 0;
+}
+.cart-items{
+ border-right: 1px solid #45567c;
+ margin-left: 15%;
+}
+.course-cart {
+    padding-left: 20px;
+    color: #45567c;
+}
+.course-cart span{
+    color: #ff697c;
+}
+
+@media (max-width: 768px) {
+    .cart{
+        margin: 0;
+        padding: 0 20px;
+        grid-template-columns: 3fr 1fr;
+    }
+    .cart-items{
+     margin-left: 0;
+    }
+    .course-cart{
+        padding-left: 20px;
+    } 
+}

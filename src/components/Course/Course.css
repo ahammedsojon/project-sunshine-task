@@ -1,0 +1,18 @@
+.price{
+    color: #45567c;
+}
+.btn-cart{
+    background-color: #45567c;
+    border: 1px solid #45567c;
+    color:white;
+    transition: all .3s;
+}
+.btn-cart:hover{
+    background-color: white;
+    color:#45567c;
+    border: 1px solid #45567c;
+    font-weight: bold;
+}
+.course img{
+    height: 236px;
+}

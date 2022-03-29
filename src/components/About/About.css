@@ -1,0 +1,40 @@
+.about{
+   margin-top: 20px;
+   background-color: white;
+   min-height: 70vh;
+}
+.about img{
+    max-width: 100%;
+}
+.about-content{
+    background-color: white;
+    padding:30px 20px 0;
+}
+.about-content .section .title::after{
+    left: 0;
+}
+.about-content .section p{
+    color:#45567c;
+}
+.content-item{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.item-icon{
+    color:#ff697c;
+    font-size: 50px;
+}
+.item-details{
+    color: #45567c;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+    .about{
+        background-color: transparent;
+    }
+    .about-content, .about img{
+        margin-bottom: 20px;
+    }
+}
