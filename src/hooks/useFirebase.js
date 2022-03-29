@@ -43,7 +43,7 @@ const useFirebase = () => {
         setError("");
         setUser({ displayName: name, email });
         updateUser(name);
-        const redirect_uri = location?.state?.from || "";
+        const redirect_uri = location?.state?.from || "/";
         history.push(redirect_uri);
       })
       .catch((error) => {
@@ -70,7 +70,7 @@ const useFirebase = () => {
       .then((userCredential) => {
         setLoading(true);
         setError("");
-        const redirect_uri = location?.state?.from || "";
+        const redirect_uri = location?.state?.from || "/";
         history.push(redirect_uri);
       })
       .catch((error) => {
@@ -83,21 +83,20 @@ const useFirebase = () => {
   };
 
   // google sign in
-  const googleSignIn = () => {
+  const googleSignIn = (location, history) => {
     signInWithPopup(auth, provider)
       .then((result) => {
         setLoading(true);
         setError("");
-        console.log(result, "googel sign in");
+        const redirect_uri = location?.state?.from || "/";
+        history.push(redirect_uri);
       })
       .catch((error) => {
         setLoading(true);
         setError(error.message);
-        console.log("google sing in", error.message);
       })
       .finally(() => {
         setLoading(false);
-        console.log("google sing in");
       });
   };
   // logoutUser

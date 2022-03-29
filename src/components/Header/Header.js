@@ -8,7 +8,6 @@ import "./Header.css";
 
 const Header = () => {
   const { user, loading, logoutUser } = useAuth();
-  console.log(user, loading);
   const activeStyle = {
     fontWeight: "bold",
     color: "#ff697c",
@@ -36,13 +35,6 @@ const Header = () => {
             </NavLink>
             <NavLink activeStyle={activeStyle} className="nav-item" to="/cart">
               Cart
-            </NavLink>
-            <NavLink
-              activeStyle={activeStyle}
-              className="nav-item"
-              to="/contact"
-            >
-              Contact
             </NavLink>
             {user?.email ? (
               <>

@@ -66,7 +66,7 @@ const Login = () => {
       </div>
       <p className="my-4">----------------or----------------</p>
       <button
-        onClick={googleSignIn}
+        onClick={() => googleSignIn(location, history)}
         className="google-login btn btn-outline-danger"
       >
         <img src={icon} alt="" />

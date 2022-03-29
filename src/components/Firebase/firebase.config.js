@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDVUih5oijEkIRCgEjM2LLsbazpP6ISLAI",
-  authDomain: "project-sunshine-task.firebaseapp.com",
-  projectId: "project-sunshine-task",
-  storageBucket: "project-sunshine-task.appspot.com",
-  messagingSenderId: "518708501639",
-  appId: "1:518708501639:web:231e381faf7e6ba408ec22",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 
 export default firebaseConfig;
